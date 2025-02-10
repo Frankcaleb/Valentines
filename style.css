@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: pink;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    
+}
+img{
+    width: 100px;
+}
+.container p{
+    color: black;
+    font-size: larger;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+
+    
+}
+.container a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    font-size: large;
+    font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.container .btn{
+    display: flex;
+    gap: 20px; 
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+}
+.container .btn:hover{
+    transform: translateY(-10px);
+}
+.btn a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+.container .tenor-gif-embed{
+    width: 1000px;
+}
